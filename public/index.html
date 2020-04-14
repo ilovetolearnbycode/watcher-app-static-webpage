@@ -25,9 +25,6 @@
         <li>
           <a href="#subjectsList"><i class="fa fa-list"></i></a>
         </li>
-        <li class="hide_desktop">
-          <a href="#"><i class="fa fa-bars"></i></a>
-        </li>
       </nav>
     </header>
     <!-- /header -->
@@ -60,7 +57,6 @@
         <p class="close"><i class="fa fa-close"></i></p>
         <h1>Add Subject</h1>
         <form id="add_subject_form" class="black-bg-form">
-          <p class="close"><i class="fa fa-close"></i></p>
           <input
             type="text"
             name="subjectName"
@@ -83,14 +79,24 @@
             id="profName"
             placeholder="Professor name...(Optional..)"
           />
-          <div class="resources_accordion">
-            <input
-              type="text"
-              name="resources"
-              id="resources"
-              placeholder="Resources..."
-            />
-            <p class="add_more_resources"><i class="fa fa-plus"></i></p>
+          <div class="resources_container">
+
+            <div class="resources_accordion" id="resource_container_id">
+              <div class="p_container_wrapper" id="p_container_wrapper">
+
+                <div class="p_container">
+                  <input
+                  type="text"
+                  name="resources"
+                  placeholder="Resources...(Optional..)"
+                  />
+               </div>
+
+              </div>
+              <i class="fa fa-plus add_more_resources"></i>
+            </div>
+
+
           </div>
           <!-- this is the container where the status shows! -->
           <div class="satisfaction_container">
@@ -99,13 +105,14 @@
             <p class="satisfaction-icons"><i class="fa fa-frown-o"></i></p>
           </div>
 
-          <button class="submitAddSubject" type="submit">Add</button>
+          <button class="submitAddSubject"
+          id="submitAddSubject" type="submit">Add</button>
         </form>
       </div>
     </div>
     <!-- adding the subject html -->
 
-    <!-- lissting all the subjects html -->
+    <!-- listing all the subjects html -->
     <div class="subjects-container" id="subjectsList">
       <div class="overlay-container">
         <p class="close fa fa-close"></p>
@@ -242,5 +249,8 @@
       </div>
     </footer>
     <!-- /footer -->
+
+
+    <script type="text/javascript" src="./js/client.js"></script>
   </body>
 </html>
