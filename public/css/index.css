@@ -26,13 +26,19 @@ body {
 
 body::-webkit-scrollbar {
   width: 0;
-  display: none;
+  /*display: none;*/
   background: transparent;
 }
+/*javascript styles*/
+.bg-sem-transparent{
+  background: rgba(0,0,0,0.5);
+  animation: bounceInDown 1s ease;
+}
+
 .hide_desktop {
   display: none;
 }
-
+  
 .mobile_show {
   display: flex;
 }
@@ -78,9 +84,16 @@ input {
 }
 
 .close {
-  width: 100%;
-  padding: 1rem;
-  text-align: right;
+  align-self: flex-end;
+  width: 1rem;
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover{
+  cursor: pointer;
 }
 
 .overlay-container {
@@ -209,8 +222,19 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: bounceInRight 2s ease-in;
+  display:none;
+  position: absolute;
+  top:0;
 }
 
+.p_container{
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .black-bg-form:hover {
   box-shadow: 0 0 7px 1px #000;
   transition: 0.5s ease all;
@@ -244,16 +268,30 @@ input.required::before {
   right: 0;
   z-index: 111111;
 }
-
+.resources_container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .resources_accordion {
   width: 100%;
-  padding: 0.1rem;
+  padding: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.p_container_wrapper{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .add_more_resources {
   cursor: pointer;
+  padding:0.2rem;
   border: 2px solid transparent;
 }
 .add_more_resources:hover {
@@ -262,7 +300,6 @@ input.required::before {
   background: #fff;
   color: #000;
   transition: 0.5s ease all;
-  animation: bounce 1s ease forwards;
 }
 
 .submitAddSubject:hover {
@@ -281,7 +318,22 @@ input.required::before {
   padding: 0.5rem;
   align-items: center;
   justify-content: space-around;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+.satisfaction-icons{
+  padding:0.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.satisfaction-icons:hover{
+  color:#ccc;
+  transform: scale(1.1);
+  animation: rubberBand 1s ease;
+  transition: 0.5s ease all;
 }
 
 /* list subjects styles */
@@ -295,6 +347,10 @@ input.required::before {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  animation: bounceInLeft 2s ease-in;
+  display:none;
+  position: absolute;
+  top:0;
 }
 .grid_gallery_container {
   width: 100%;
@@ -357,7 +413,7 @@ footer {
 }
 
 .footer-container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -394,4 +450,17 @@ footer {
   .bible-verse h1 {
     padding-top: 2rem;
   }
+}
+
+/*javascript classes*/
+.highlight_on_added{
+  color:#75daad;
+}
+.highlight_on_added:hover{
+  font-weight:bold;
+  color:#76dbd1;
+}
+.unhighlighted_on_added{
+  color:#fff;
+  font-weight:bold;
 }
