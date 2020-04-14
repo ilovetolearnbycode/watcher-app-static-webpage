@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Watcher watching yah...</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <li>
+          <a href="#"><i class="fa fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#addSubjectContainerDiv"><i class="fa fa-plus"></i></a>
+        </li>
+        <li>
+          <a href="#subjectsList"><i class="fa fa-list"></i></a>
+        </li>
+        <li class="hide_desktop">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </li>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- main body section container -->
+    <main>
+      <div class="first-section">
+        <div class="first-section-container">
+          <div class="bible-verse">
+            <h1>
+              Be strong and courageous. Do not be afraid or terrified because of
+              them, for the LORD your God goes with you; he will never leave you
+              nor forsake you.”
+            </h1>
+            <p>Deuteronomy 31:6</p>
+          </div>
+          <div class="btn-container">
+            <button class="btn add-subject">Add Subject</button>
+            <button class="btn list-subjects">List Subjects</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /main body section container -->
+
+    <!-- modal container content -->
+    <!-- adding the subject html -->
+    <div class="add-subject-container" id="addSubjectContainerDiv">
+      <div class="overlay-container">
+        <p class="close"><i class="fa fa-close"></i></p>
+        <h1>Add Subject</h1>
+        <form id="add_subject_form" class="black-bg-form">
+          <p class="close"><i class="fa fa-close"></i></p>
+          <input
+            type="text"
+            name="subjectName"
+            id="subjectName"
+            class="required"
+            required="true"
+            placeholder="Subject name"
+          />
+          <input
+            type="text"
+            name="lectureNumber"
+            id="lectureNumber"
+            class="required"
+            required="true"
+            placeholder="Number of lectures..."
+          />
+          <input
+            type="text"
+            name="profName"
+            id="profName"
+            placeholder="Professor name...(Optional..)"
+          />
+          <div class="resources_accordion">
+            <input
+              type="text"
+              name="resources"
+              id="resources"
+              placeholder="Resources..."
+            />
+            <p class="add_more_resources"><i class="fa fa-plus"></i></p>
+          </div>
+          <!-- this is the container where the status shows! -->
+          <div class="satisfaction_container">
+            <p class="satisfaction-icons"><i class="fa fa-smile-o"></i></p>
+            <p class="satisfaction-icons"><i class="fa fa-meh-o"></i></p>
+            <p class="satisfaction-icons"><i class="fa fa-frown-o"></i></p>
+          </div>
+
+          <button class="submitAddSubject" type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+    <!-- adding the subject html -->
+
+    <!-- lissting all the subjects html -->
+    <div class="subjects-container" id="subjectsList">
+      <div class="overlay-container">
+        <p class="close fa fa-close"></p>
+        <h1>Subjects</h1>
+        <div class="grid_gallery_container">
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+
+          <div class="subject-card">
+            <p class="close"><i class="fa fa-close"></i></p>
+            <p class="subject_name">Electrical Machines</p>
+            <p class="lectures_number">13 lectures</p>
+            <p class="prof_name">Prof. Tapas Kumar</p>
+
+            <button class="resouces_list_btn">
+              Resources
+              <i class="fa fa-plus open_resources"></i>
+            </button>
+            <div class="btn-container">
+              <button class="btn progress_btn">Progress</button>
+              <button class="btn update_btn">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /lissting all the subjects html -->
+    <!-- /modal container content -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="copyrights">
+          &copy; nelapudi sandeep
+        </div>
+        <div class="social-links">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+  </body>
+</html>

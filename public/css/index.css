@@ -1,0 +1,397 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Quicksand:wght@300&display=swap");
+/* 
+font-family: 'Baloo Paaji 2', cursive;
+font-family: 'Quicksand', sans-serif;
+*/
+
+/* gloabal styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+  background: transparent;
+}
+.hide_desktop {
+  display: none;
+}
+
+.mobile_show {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+  font-weight: normal;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ccc;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 1rem;
+}
+
+button:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  background: transparent;
+  margin: 0.1rem;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.close {
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+}
+
+.overlay-container {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* header styles */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  padding: 1rem;
+}
+
+a {
+  color: #fff;
+  padding: 1rem 1.2rem;
+  position: relative;
+  animation: fadeInUp 1s ease;
+}
+
+/* main styles */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/image-3.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bible-verse {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.first-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-section-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.85);
+  flex-direction: column;
+}
+
+.btn-container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.add-subject {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 10px 2px #fff;
+}
+
+.list-subjects {
+  font-weight: bold;
+  box-shadow: 0 0 10px 2px #fff;
+  color: #fff;
+}
+
+.add-subject:hover {
+  background: transparent;
+  transition: 0.5s ease all;
+  box-shadow: 0 0 10px 2px transparent;
+}
+
+.list-subjects:hover {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  transition: 0.5s ease all;
+}
+
+/* add subject form styles */
+.add-subject-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/image-1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.black-bg-form:hover {
+  box-shadow: 0 0 7px 1px #000;
+  transition: 0.5s ease all;
+}
+
+.black-bg-form {
+  width: 65%;
+  padding: 1rem;
+  background: #111d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input.required {
+  position: relative !important;
+}
+
+input.required::before {
+  content: "thisisasample";
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  padding: 2rem;
+  background: red;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 111111;
+}
+
+.resources_accordion {
+  width: 100%;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add_more_resources {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.add_more_resources:hover {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  transition: 0.5s ease all;
+  animation: bounce 1s ease forwards;
+}
+
+.submitAddSubject:hover {
+  transform: scale(1.1);
+  animation: all 0.5s ease;
+}
+.submitAddSubject:focus {
+  background: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+.satisfaction_container {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+/* list subjects styles */
+.subjects-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/image-2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.grid_gallery_container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1.1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.subject-card {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subject-card:nth-child(odd) {
+  animation: bounceInLeft 1s ease 1s;
+}
+.subject-card:nth-child(even) {
+  animation: bounceInRight 1.5s ease 1.5s;
+}
+.subject-card:hover {
+  box-shadow: 0 0 10px 2px #000;
+  transition: 0.5s ease all;
+}
+
+.resouces_list_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.open_resources {
+  padding: 0.5rem;
+}
+
+/* footer styles */
+footer {
+  width: 100%;
+  background: url("../assets/image-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links a {
+  padding: 0 1rem;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyrights {
+  padding: 0;
+}
+
+/* media queries */
+@media screen and (max-width: 450px) {
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-container button {
+    margin: 0.75rem;
+  }
+  .overlay-container {
+    padding: 0.5rem;
+  }
+  .grid_gallery_container {
+    padding: 0;
+  }
+  .black-bg-form {
+    width: 95%;
+  }
+  .bible-verse {
+    padding: 0.2rem;
+  }
+  .bible-verse h1 {
+    padding-top: 2rem;
+  }
+}
